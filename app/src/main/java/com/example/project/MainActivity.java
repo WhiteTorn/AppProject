@@ -30,6 +30,11 @@ public class MainActivity extends AppCompatActivity
     thirdFragment thirdFragment = new thirdFragment();
     forthFragment forthFragment = new forthFragment();
     fifthFragment fifthFragment = new fifthFragment();
+    sixthFragment sixthFragment = new sixthFragment();
+    seventhFragment seventhFragment = new seventhFragment();
+    eightFragment eightFragment = new eightFragment();
+    ninethFragment ninethFragment = new ninethFragment();
+    tenthFragment tenthFragment = new tenthFragment();
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         if (item.getItemId() == R.id.home) {
@@ -37,16 +42,16 @@ public class MainActivity extends AppCompatActivity
             getSupportFragmentManager().beginTransaction().replace(R.id.flFragmentTwo, secondFragment).commit();
             return true;
         } else if (item.getItemId() == R.id.person) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.flFragmentOne, thirdFragment).commit();
-            getSupportFragmentManager().beginTransaction().replace(R.id.flFragmentTwo, secondFragment).commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.flFragmentOne, fifthFragment).commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.flFragmentTwo, sixthFragment).commit();
             return true;
         }  else if (item.getItemId() == R.id.portfolio) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.flFragmentOne, firstFragment).commit();
-            getSupportFragmentManager().beginTransaction().replace(R.id.flFragmentTwo, secondFragment).commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.flFragmentOne, seventhFragment).commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.flFragmentTwo, eightFragment).commit();
             return true;
         } else if (item.getItemId() == R.id.gallery) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.flFragmentOne, firstFragment).commit();
-            getSupportFragmentManager().beginTransaction().replace(R.id.flFragmentTwo, secondFragment).commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.flFragmentOne, ninethFragment).commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.flFragmentTwo, tenthFragment).commit();
             return true;
         }
         else if (item.getItemId() == R.id.settings) {

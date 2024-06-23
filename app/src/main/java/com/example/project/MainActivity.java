@@ -42,11 +42,11 @@ public class MainActivity extends AppCompatActivity
             getSupportFragmentManager().beginTransaction().replace(R.id.flFragmentTwo, secondFragment).commit();
             return true;
         } else if (item.getItemId() == R.id.person) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.flFragmentOne, fifthFragment).commit();
-            getSupportFragmentManager().beginTransaction().replace(R.id.flFragmentTwo, sixthFragment).commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.flFragmentOne, sixthFragment).commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.flFragmentTwo, seventhFragment).commit();
             return true;
         }  else if (item.getItemId() == R.id.portfolio) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.flFragmentOne, seventhFragment).commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.flFragmentOne, fifthFragment).commit();
             getSupportFragmentManager().beginTransaction().replace(R.id.flFragmentTwo, eightFragment).commit();
             return true;
         } else if (item.getItemId() == R.id.gallery) {
